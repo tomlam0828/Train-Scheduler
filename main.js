@@ -34,3 +34,21 @@ $("#button").on("click", function () {
         dateAdded: firebase.database.ServerValue.TIMESTAMP
     })
 });
+
+database.ref().on("child_added", function(childSnapshot) {
+    console.log(childSnapshot.val());
+    console.log(childSnapshot.val().trainName);
+    console.log(childSnapshot.val().destination);
+    console.log(childSnapshot.val().firstTrain);
+    console.log(childSnapshot.val().frequency);
+
+
+$("#tbody").append("<tr><td>" + childSnapshot.val().trainName +
+    "<td>" + childSnapshot.val().destination + 
+    "<td>" + childSnapshot.val().frequency + 
+    "<td>" + childSnapshot.val(). firstTrain + " pm" + 
+    "<td>" + 
+    "</td></tr>");
+}, function (errorObject) {
+    console.log("The read failed: " + errorObject.code)
+})
