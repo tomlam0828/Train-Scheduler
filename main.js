@@ -42,7 +42,6 @@ database.ref().on("child_added", function(childSnapshot) {
     console.log(childSnapshot.val().firstTrain);
     console.log(childSnapshot.val().frequency);
 
-
 $("#tbody").append("<tr><td>" + childSnapshot.val().trainName +
     "<td>" + childSnapshot.val().destination + 
     "<td>" + childSnapshot.val().frequency + 
