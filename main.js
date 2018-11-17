@@ -45,7 +45,7 @@ database.ref().on("child_added", function(childSnapshot) {
 $("#tbody").append("<tr><td>" + childSnapshot.val().trainName +
     "<td>" + childSnapshot.val().destination + 
     "<td>" + childSnapshot.val().frequency + 
-    "<td>" + childSnapshot.val(). firstTrain + " pm" + 
+    "<td>" + childSnapshot.val(). firstTrain + 
     "<td>" + 
     "</td></tr>");
 }, function (errorObject) {

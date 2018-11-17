@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
 </head>
 
@@ -48,7 +49,7 @@
                 </div>
                 <div class="form-group">
                     <label for="firsttrain-input">First Train Time (HH:mm - military Time)</label>
-                    <input type="text" class="form-control" id="firsttrain-input" placeholder="">
+                    <input type="time" class="form-control" id="firsttrain-input" placeholder="">
                 </div>
                 <div class="form-group">
                     <label for="frequency-input">Frequency (min)</label>
@@ -60,4 +61,5 @@
     </div>
     <script src="main.js"></script>
 </body>
+
 </html>
